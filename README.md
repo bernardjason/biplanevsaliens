@@ -1,4 +1,4 @@
-# bi-plan vs aliens
+# bi-plane vs aliens
 
 on linux to target windows
 ```
@@ -35,5 +35,12 @@ or
 cd target/debug
 zip -r biplanevsaliens_linux.zip biplanevsaliens resources
 ```
+To run built code either download and expand
 
+https://github.com/bernardjason/biplanevsaliens/releases/download/0.1.0/biplanevsaliens_linux.zip
 
+or
+
+https://github.com/bernardjason/biplanevsaliens/releases/download/0.1.0/biplanevsaliens_windows.zip
+
+and run executable biplanevsaliens or biplanevsaliens.exe
