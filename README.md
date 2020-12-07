@@ -6,6 +6,10 @@ Fly bi-plane around shooting aliens, ideally before they land. Too many land tha
 
 Game only possible with excellent https://github.com/bwasty/learn-opengl-rs 
 
+See a short demo here
+https://youtu.be/m7fsfRz65o4 
+
+
 ## build
 on linux to target windows
 ```
