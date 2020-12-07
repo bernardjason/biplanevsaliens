@@ -18,7 +18,7 @@ use crate::enemy_ship::EnemyShip;
 use crate::explosion::Explosion;
 use crate::landscape::{ACTUAL_WIDTH, CELL, LAND_X, LAND_Z, Landscape, SQUARES};
 use crate::player_shape::{PlayerShape};
-use crate::sound::{ENGINE, HIT_WALL, load_sound, play};
+use crate::sound::{ENGINE, HIT_WALL, load_sound, play, FIRE};
 use crate::start_screen;
 
 use self::sdl2::EventPump;
@@ -213,6 +213,7 @@ pub fn sdl_main() -> Result<(), String> {
                     bullets.new_instance(dir, player.position);
                     bullets.new_instance(dir, pos_right);
                     fire_every = -30;
+                    play(FIRE);
                 }
 
                 explosions.update_explosion(delta_time);

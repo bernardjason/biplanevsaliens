@@ -61,6 +61,7 @@ static mut SOUNDS_MAP: Option<HashMap<usize, AudioDevice<Sound>>> = None;
 
 pub static HIT_WALL: usize = 1;
 pub static ENGINE: usize = 2;
+pub static FIRE: usize = 3;
 
 #[cfg(feature = "soundoff")]
 pub fn load_sound(sdl_context: &Sdl) { }
@@ -81,6 +82,7 @@ pub fn load_sound(sdl_context: &Sdl) {
         VOLUME_MAP = Some(HashMap::new());
         SOUNDS_MAP.as_mut().unwrap().insert(HIT_WALL, load_in_file(sdl_context, "resources/sound/hit.wav", HIT_WALL,  false));
         SOUNDS_MAP.as_mut().unwrap().insert(ENGINE, load_in_file(sdl_context, "resources/sound/242740__marlonhj__engine.wav", ENGINE, true));
+        SOUNDS_MAP.as_mut().unwrap().insert(FIRE, load_in_file(sdl_context, "resources/sound/fire.wav", FIRE, false));
     }
 }
 
@@ -133,7 +135,7 @@ fn load_in_file(sdl_context: &Sdl, file_name: &'static str, id: usize, repeat:bo
         }
         match &mut VOLUME_MAP {
             Some(p) => {
-                p.insert(id,0.3);
+                p.insert(id,15.0);
             }
             None => println!("What??"),
         }
