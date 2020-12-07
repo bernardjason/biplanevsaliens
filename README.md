@@ -1,5 +1,12 @@
 # bi-plane vs aliens
 
+a 3d game using opengl and sdl2. sdl2 for keyboard and because I copied a start screen from another game.
+
+Fly bi-plane around shooting aliens, ideally before they land. Too many land that's the end of the game
+
+Game only possible with excellent https://github.com/bwasty/learn-opengl-rs 
+
+## build
 on linux to target windows
 ```
 export PKG_CONFIG_ALLOW_CROSS=1
@@ -35,6 +42,8 @@ or
 cd target/debug
 zip -r biplanevsaliens_linux.zip biplanevsaliens resources
 ```
+
+# run released code
 To run built code either download and expand
 
 https://github.com/bernardjason/biplanevsaliens/releases/download/0.1.0/biplanevsaliens_linux.zip
