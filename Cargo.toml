@@ -1,0 +1,33 @@
+[package]
+name = "biplanevsaliens"
+version = "0.1.0"
+authors = ["bernardcjason@gmail.com <bernardcjason@gmail.com>"]
+edition = "2018"
+
+[features]
+soundoff = []
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+cgmath = "0.16.1"
+gl = "0.10.0"
+glfw = "0.23.0"
+image = "0.19.0"
+tobj = "0.1.6"
+num = "0.2.0"
+rand = "0.5.5"
+#pretty_env_logger = "0.4"
+#log ="0.4"
+rng = "0.1.0"
+gio = "0.8"
+lazy_static = "1.4.0"
+noise = "0.6.0"
+#array-init = "0.1.1"
+
+[dependencies.sdl2]
+version = "0.34"
+default-features = false
+features = ["image","gfx" , "ttf" , "static-link","bundled" ]
+
+[build-dependencies]
+fs_extra = "1.1.0"
